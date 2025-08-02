@@ -42,7 +42,7 @@ const AppointmentForm = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:3000/appointments', {
+      const response = await fetch('https://healthcare-sozp.onrender.com/appointments', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

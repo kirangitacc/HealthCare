@@ -14,7 +14,7 @@ const Profile = () => {
       const token = localStorage.getItem('token');
 
       try {
-        const response = await fetch(`http://localhost:3000/user/${userId}`, {
+        const response = await fetch(`https://healthcare-sozp.onrender.com/user/${userId}`, {
           method: 'GET',
           headers: {
             Authorization: `Bearer ${token}`,

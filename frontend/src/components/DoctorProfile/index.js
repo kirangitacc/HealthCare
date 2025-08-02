@@ -19,7 +19,7 @@ const DoctorProfile = () => {
     const fetchDoctor = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:3000/doctor/${doctorId}`, {
+        const response = await fetch(`https://healthcare-sozp.onrender.com/doctor/${doctorId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

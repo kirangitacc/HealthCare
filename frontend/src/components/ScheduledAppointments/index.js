@@ -12,7 +12,7 @@ const ScheduledAppointments = () => {
       try {
         const userId = localStorage.getItem('user_id');
         const token = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:3000/appointments/${userId}`, {
+        const response = await fetch(`https://healthcare-sozp.onrender.com/appointments/${userId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

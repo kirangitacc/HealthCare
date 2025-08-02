@@ -16,7 +16,7 @@ const Home = () => {
     const fetchDoctors = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('http://localhost:3000/doctors', {
+        const response = await fetch('https://healthcare-sozp.onrender.com/doctors', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
