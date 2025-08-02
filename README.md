@@ -197,6 +197,41 @@ We welcome contributions! To contribute:
 
 ---
 
+## 📌 Improvements with More Time
+
+📲 SMS/Email Reminders – Notify patients about upcoming appointments.
+
+📊 Admin Dashboard – Interface for doctors/admins to manage schedules, appointments, and patient history.
+
+🌈 UI/UX Enhancements – Polish the styling, add transitions, and implement better accessibility.
+
+---
+
+## 🧠 Challenges Faced & Solutions
+## 🔧 Challenges
+- Database locking issues with SQLite
+
+- JWT handling during page refresh
+
+- Conditional component rendering
+
+- Cross-Origin Requests (CORS)
+
+- Frontend-backend port conflict
+
+## ✅ Solutions
+- Used async/await carefully and ensured single-write operations at a time
+
+- Persisted auth state using localStorage and validated tokens in API
+
+- Created ProtectedRoute to guard authenticated routes
+
+- Used cors middleware in Express backend
+
+- Set up proxy in frontend and used different ports
+
+---
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).\
