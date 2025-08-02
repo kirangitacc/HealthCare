@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Header from '../Header';
-import Loader from '../../components/Loader';
+import Loader from '../Loader';
 import './index.css';
 import { useNavigate } from 'react-router-dom';
 import manLogo from '../Assets/man.png';

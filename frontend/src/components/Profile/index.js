@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../Header';
+import Loader from '../Loader';
 import './index.css';
 
 const Profile = () => {
@@ -37,8 +38,8 @@ const Profile = () => {
     fetchUserDetails();
   }, []);
 
-  if (loading) return <div className="loading">Loading...</div>;
-  if (error) return <div className="error">{error}</div>;
+  if (loading) return <div className="loadingu"><Loader /></div>;
+  if (error) return <div className="erroru">{error}</div>;
 
   return (
     <>
