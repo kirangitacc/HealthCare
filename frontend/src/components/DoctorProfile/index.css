@@ -1,0 +1,96 @@
+
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:81vh;
+  border: 5px solid lightsalmon;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:10px;
+}
+
+.profile-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+
+.profile-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #0077cc;
+}
+
+.profile-card p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.available {
+  color: green;
+  font-weight: bold;
+}
+
+.unavailable {
+  color: red;
+  font-weight: bold;
+}
+
+
+.book-button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #005fa3;
+}
+
+
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .profile-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .profile-card p {
+    font-size: 0.95rem;
+  }
+
+  .book-button {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}
+
